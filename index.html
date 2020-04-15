@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Röplabda</title>
+<link href="basic.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<ul class="nav">
+		
+		<li class="logo"><a href="index.html"><img src="img/labda.jpg" alt=""/></a></li>
+		<li><a href="#">Szabályok</a></li>
+		<li><a href="#">Források</a></li>
+	</ul>
+	<div class="bg">
+		  <h1>Röplabda</h1>
+	</div>
+	<div class="h">
+	<h3>Információk</h3>
+	</div>
+<div class="ct">
+	<a href="https://www.bbc.com/news/world-europe-50315450"><div  id="a" class="sh" >
+		<div class="text">
+		<p>Spanish girl with Down's syndrome excluded from volleyball team</p>
+		</div>
+		</div>
+	</a>
+	<a href="https://www.bbc.com/sport/volleyball/47608491"><div id="b" class="sh">
+		<div class="text">
+		<p>Volleyball initiative launched to recycle discarded fishing nets for local communities</p>
+		</div>
+		</div>
+	</a>
+	
+		
+	<div class="tx">
+			<h3>Mi is az a röplabda?</h3>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A röplabda csapatsport, amelyet két, egymástól egy magas hálóval elválasztott csapat játszik egy labdával, amit főleg kézzel és karral tartanak mozgásban a pálya légterében. A röplabda igen aktív sport, különösen alkalmas rugalmas, gyors feladatok gyakorlására.</p>
+	</div>
+	
+</div>
+<div>
+		<h2>Szabályok</h2>
+		<p>A pálya mérete 9 m × 18 m. A pályát egy 9,5 m × 1 m méretű háló két részre osztja, aminek a teteje férfiaknál 2,43, nőknél 2,24 méter magasan van, de ez változhat a kezdők és a veterán játékosok számára. A pályán a hálóval párhuzamosan ... <a href ="">&lt;click here&gt;</a></p>
+	</div>
+	<div>
+		<h2>Videók</h2>
+		
+	</div>
+	
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("sh");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 20000);
+}
+</script>
+	
+</body>
+</html>

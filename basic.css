@@ -1,0 +1,143 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.nav{
+	background-color: white;
+	color: black;
+	list-style: none;
+	text-align: right;
+	padding: 5px 0 0 0;
+	overflow: hidden;
+	max-height: 50px;
+	vertical-align: top;
+	
+}
+.nav > li {
+	display: inline-block;
+	padding: 0 25px 0 25px;
+	font-size: 20px;
+	
+}
+.nav > li > a {
+	text-decoration: none;
+	color:black;
+}
+.nav > li > a:hover {
+	color:#c1c1c1;
+}
+.logo {
+	float:left;
+	padding-left: 25px;
+	text-decoration: none;
+}
+.logo > a > img {
+		width: 50px;
+		
+}
+.header {
+	position: relative;
+	text-align: center;
+	color:white;
+}
+.bg {
+	 position: relative; 
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/bg.jpg");
+	background-position: center center;
+    background-size: cover;
+}
+.bg::before {
+	 content: "";
+    position: absolute;
+	top: 20%;
+    right: 30%;
+    bottom: 20%;
+    left: 30%;
+    background-color: rgba(255,255,255,0.30);
+	border-radius: 10px;
+	border: 4px solid rgba(255,255,255,0.3);
+}
+h1{
+	font-size: 70px;
+	color: rgba(0,0,0,1.00);
+	position: relative;
+}
+.sh {
+    height: 250px;
+	width:500px;
+    background-size: cover;
+	border: 5px solid rgba(28,31,76,0.61);
+	margin: 20px;
+	position: relative;
+	display: none;
+	border-radius: 12px;
+}
+.text {
+	opacity: 0;
+	background: #FFF;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+}
+.text > p {
+	margin:0;
+	opacity: 1;
+}
+
+.sh:hover .text{
+	opacity: 0.6;
+	text-align:justify;
+    color:#000000;
+    font-size:20px;
+    font-weight:700;
+    padding:30px;
+	
+}
+#a {
+	background: url("img/1.jpg") no-repeat center center;
+}
+#b {
+	background: url(img/2.jpg) no-repeat center center;
+}
+.h > h3 {
+	color: white;
+	text-align: center;
+	margin: 20px 120px;
+	background-color: #fccf17;
+	font-size: 20px;
+	border-radius: 2px;
+	padding: 10px;
+	border: 5px dotted #F2B501;
+	letter-spacing: 2px;
+
+}
+.tx {
+	float:right;
+	width:500px;
+	background: #00848c;
+	margin: 20px;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	line-height: 35px;
+	border-radius: 15px 20px 20px 0;
+	border: 5px solid #037272;
+}
+.ct {
+	display: flex;
+	justify-content: center;
+}
