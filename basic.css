@@ -32,6 +32,7 @@ body{
 .nav > li > a {
 	text-decoration: none;
 	color:black;
+	font-weight: bold;
 }
 .nav > li > a:hover {
 	color:#c1c1c1;
@@ -45,11 +46,6 @@ body{
 		width: 50px;
 		
 }
-.header {
-	position: relative;
-	text-align: center;
-	color:white;
-}
 .bg {
 	 position: relative; 
     height: 250px;
@@ -59,6 +55,8 @@ body{
     background-image: url("img/bg.jpg");
 	background-position: center center;
     background-size: cover;
+	border-top:20px solid rgba(255,255,255,0.35);
+	border-bottom: 20px solid rgba(255,255,255,0.35);
 }
 .bg::before {
 	 content: "";
@@ -67,20 +65,22 @@ body{
     right: 30%;
     bottom: 20%;
     left: 30%;
-    background-color: rgba(255,255,255,0.30);
+    background-color: rgba(0,0,0,0.50);
 	border-radius: 10px;
-	border: 4px solid rgba(255,255,255,0.3);
+	border: 1px solid rgba(0,0,0,0.55);
 }
 h1{
 	font-size: 70px;
-	color: rgba(0,0,0,1.00);
+	color: #edebd9;
 	position: relative;
+	font-family: 'Bangers', cursive;
+
 }
-.sh {
-    height: 250px;
+.se {
+    height:250px;
 	width:500px;
     background-size: cover;
-	border: 5px solid rgba(28,31,76,0.61);
+	border: 5px solid rgba(28,31,76,0.79);
 	margin: 20px;
 	position: relative;
 	display: none;
@@ -96,9 +96,11 @@ h1{
 .text > p {
 	margin:0;
 	opacity: 1;
+	
+	
 }
 
-.sh:hover .text{
+.slideshow:hover .text{
 	opacity: 0.6;
 	text-align:justify;
     color:#000000;
@@ -114,15 +116,14 @@ h1{
 	background: url(img/2.jpg) no-repeat center center;
 }
 .h > h3 {
-	color: white;
+	
 	text-align: center;
-	margin: 20px 120px;
-	background-color: #fccf17;
-	font-size: 20px;
-	border-radius: 2px;
-	padding: 10px;
+	margin: 20px 20%;
+	background-color: rgba(252,207,23,1);
+	font-size: 30px;
+	padding: 5px;
 	border: 5px dotted #F2B501;
-	letter-spacing: 2px;
+	font-family: 'Lobster', cursive;
 
 }
 .tx {
@@ -136,8 +137,40 @@ h1{
 	line-height: 35px;
 	border-radius: 15px 20px 20px 0;
 	border: 5px solid #037272;
+	
 }
 .ct {
 	display: flex;
 	justify-content: center;
+}
+h2{
+	text-align: center;
+	margin: 20px 20%;
+	font-size: 30px;
+	padding: 5px;
+	font-family: 'Lobster', cursive;
+}
+#sza > p {
+	background: #fccf17;
+	margin: auto;
+	padding:20px;
+	border: 5px dotted #F2B501;
+	width: 85%;
+	font-size: 17px;
+}
+#sza > p > a {
+	text-decoration: none;
+	color:black;
+	
+}
+#subtitle1{
+	color: #1c1f4c;
+	backgroubd-color: #edebd9;
+	border:5px dashed #1c1f4c;
+	
+}
+#subtitle2{
+	color: white;
+	background-color: #FCCF17;
+	border: 5px dotted #F2B501;
 }

@@ -3,67 +3,66 @@
 <head>
 <meta charset="utf-8"/>
 <title>Röplabda</title>
-<link href="basic.css" rel="stylesheet" type="text/css">
+<link href="basic1.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
 	<ul class="nav">
-		
-		<li class="logo"><a href="index.html"><img src="img/labda.jpg" alt=""/></a></li>
-		<li><a href="#">Szabályok</a></li>
-		<li><a href="#">Források</a></li>
+		<li class="logo"><a href="https://mlevi17.github.io"><img src="img/labda.jpg" alt=""/></a></li>
+		<li><a href="" class="button">Szabályok</a></li>
+		<li><a href="" class="button">Források</a></li>
 	</ul>
-	<div class="bg">
-		  <h1>Röplabda</h1>
+	<div class="banner">
+		  <h1>RöpLabda</h1>
 	</div>
-	<div class="h">
-	<h3>Információk</h3>
+	<h2 class="subtitle2" >Információk</h2>
+<div class="flexbox">
+	<div class="ssc borderlb2" data-cycle="20000">
+		<a href="https://www.bbc.com/news/world-europe-50315450">
+ 			 <div  id="n1" class="slideshow flexitem ss fade" >
+				<div class="text">
+					<p>Spanish girl with Down's syndrome excluded from volleyball team</p>
+				</div>
+			</div>
+		 </a>
+		<a href="https://www.bbc.com/sport/volleyball/47608491">
+ 			 <div id="n2" class="slideshow flexitem ss fade">
+				<div class="text">
+					<p>Volleyball initiative launched to recycle discarded fishing nets for local communities</p>
+				</div>
+  			</div>	
+		</a>
 	</div>
-<div class="ct">
-	<a href="https://www.bbc.com/news/world-europe-50315450"><div  id="a" class="sh" >
-		<div class="text">
-		<p>Spanish girl with Down's syndrome excluded from volleyball team</p>
-		</div>
-		</div>
-	</a>
-	<a href="https://www.bbc.com/sport/volleyball/47608491"><div id="b" class="sh">
-		<div class="text">
-		<p>Volleyball initiative launched to recycle discarded fishing nets for local communities</p>
-		</div>
-		</div>
-	</a>
-	
-		
-	<div class="tx">
+  <div class="text-item flexitem backlb borderlb">
 			<h3>Mi is az a röplabda?</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A röplabda csapatsport, amelyet két, egymástól egy magas hálóval elválasztott csapat játszik egy labdával, amit főleg kézzel és karral tartanak mozgásban a pálya légterében. A röplabda igen aktív sport, különösen alkalmas rugalmas, gyors feladatok gyakorlására.</p>
+			<p>A röplabda csapatsport, amelyet két, egymástól egy magas hálóval elválasztott csapat játszik egy labdával, amit főleg kézzel és karral tartanak mozgásban a pálya légterében. A röplabda igen aktív sport, különösen alkalmas rugalmas, gyors feladatok gyakorlására.</p>
 	</div>
-	
 </div>
-<div>
-		<h2>Szabályok</h2>
-		<p>A pálya mérete 9 m × 18 m. A pályát egy 9,5 m × 1 m méretű háló két részre osztja, aminek a teteje férfiaknál 2,43, nőknél 2,24 méter magasan van, de ez változhat a kezdők és a veterán játékosok számára. A pályán a hálóval párhuzamosan ... <a href ="">&lt;click here&gt;</a></p>
+	<h2 class="subtitle1">Szabályok</h2>
+<div class="flexbox">
+	<div class="flexitem text-item backy bordery">
+		<p>A pálya mérete 9 m × 18 m. A pályát egy 9,5 m × 1 m méretű háló két részre osztja, aminek a teteje férfiaknál 2,43, nőknél 2,24 méter magasan van, de ez változhat a kezdők és a veterán játékosok számára. A pályán a hálóval párhuzamosan ... </p>
+		<a href ="https://mlevi17.github.io/szabalyok/">Click here</a>
 	</div>
-	<div>
-		<h2>Videók</h2>
-		
+	<div class="ssc bordery2" data-cycle="10000">
+		<div id="k1" class="flexitem slideshow ss fade"></div>
+		<div id="k2" class="flexitem slideshow ss fade"></div>
+		<div id="k3" class="flexitem slideshow ss fade"></div>
+		<div id="k4" class="flexitem slideshow ss fade"></div>
+		<div id="k5" class="flexitem slideshow ss fade"></div>
 	</div>
-	
-	<script>
-var myIndex = 0;
-carousel();
+</div>
+<h2 class="subtitle3">Videók</h2>
+	<div class="flexbox" style="align-items: center">
+			<iframe src="https://www.youtube.com/embed/BZVqLbSZ5gE" width="600" height="400" frameborder="0" class="bordeb2"  style="padding: 40px; margin:40px; text-align:space-between" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<iframe width="560" height="300" src="https://www.youtube.com/embed/puxDrjFI0oc" frameborder="0" class="borderb" style="padding: 30px; background-color: #1c1f4c;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("sh");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 20000);
-}
-</script>
+		</div>
 	
+<script src="script.js">
+	
+</script>
 </body>
 </html>
