@@ -13,14 +13,14 @@
 	list-style: none;
 	text-align: right;
 	overflow:hidden;
-	max-height: 50px;
+	max-height: 50px; 
 	display:flex;
 	align-items: center;
 	justify-content: flex-end;
 }
 .nav li {
 	display: inline-block;
-	padding: 0 25px ; /*check*/
+	padding: 0 25px ; 
 	font-size: 20px;
 	color: #037272;
 }
@@ -36,7 +36,7 @@
 }
 .logo a img{
 	width:50px;
-	margin: 3px 0 0 0;
+	margin: 8px 0 0 0;
 }
 .banner{
 	position: relative;
@@ -73,7 +73,7 @@
   max-width: 500px;
   min-width: 500px;
   min-height: 300px;
-  max-heigth: 300px;
+  max-height: 300px;
 }
 .slideshow {
  position: relative;
@@ -87,7 +87,7 @@
     padding:30px;
 	margin: 20px 20px 20px 10px;
 	display: block;
-		
+	transition-duration: 2s;
 }
 .text {
 	display: none;
@@ -122,7 +122,7 @@
 }
 .button{
 	transition-duration: 1s;
-	padding: 7.5px;
+	padding: 6px;
 	
 }
 .button:hover {
@@ -158,9 +158,35 @@
         opacity: 1
     }
 }
+.pop {
+    -webkit-animation-name: pop;
+    -webkit-animation-duration: 1s;
+    animation-name: pop;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes pop {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes pop {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 .subtitle1{
 	color: #1c1f4c;
-	backgroubd-color: #edebd9;
+	background-color: white;
 	border:5px dashed #1c1f4c;
 	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
