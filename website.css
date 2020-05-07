@@ -32,16 +32,16 @@
 .logo{
 	margin-left: 10px;
 	margin-right: auto;
-	align-self: center;
+	align-self:center;
 }
 .logo a img{
 	width:45px;
-	margin: 8px 0 0 0;
+	margin: 5px 0 -4px 0;
 }
 .logo a img:hover{
 	transition-duration: .5s;
 	width:55px;
-	margin-left:5px;
+	margin-left:-5px;
 }
 .banner{
 	position: relative;
@@ -126,7 +126,7 @@
 	padding: 20px;
 }
 .button{
-	transition-duration: 1s;
+	transition-duration: .7s;
 	padding: 6px;
 	
 }
